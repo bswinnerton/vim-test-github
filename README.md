@@ -43,3 +43,7 @@ nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 ```
+
+### Known Issues
+
+- Currently there is only support for minitest "spec" syntax
