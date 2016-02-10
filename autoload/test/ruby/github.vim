@@ -8,7 +8,7 @@ function! test#ruby#github#build_position(type, position) abort
     let matching_lines = s:matching_lines(test_name, a:position['file'])
     let line_number = s:find_nearest_line_number(a:position['line'], matching_lines)
 
-    return [a:position['file'], '--name', '/L'.line_number.'/']
+    return [a:position['file'], '--name', '/L'.line_number.'$/']
   elseif a:type == 'file'
     return [a:position['file']]
   else
