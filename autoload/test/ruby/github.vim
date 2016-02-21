@@ -55,7 +55,7 @@ function! s:find_nearest_line_number(needle, haystack) abort
 endfunction
 
 function! s:matching_lines(test_name, file) abort
-  let command = 'grep -n "'.a:test_name.'" '.a:file.' | cut -f1 -d:'
+  let command = 'grep -n "test.*'.a:test_name.'" '.a:file.' | cut -f1 -d:'
   let results = system(command)[:-2]
   return split(results, "\n")
 endfunction
