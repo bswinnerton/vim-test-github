@@ -1,5 +1,5 @@
 function! test#ruby#github#test_file(file) abort
-  return expand('%:p') =~# 'github/github'
+  return expand('%:p') =~# 'github/github/'
 endfunction
 
 function! test#ruby#github#build_position(type, position) abort
