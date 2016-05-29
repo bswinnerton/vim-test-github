@@ -13,14 +13,14 @@ out the appropriate line number to run.
 
 Install `vim-test` and this plugin:
 
-```vimscript
+```viml
 Plug 'janko-m/vim-test'
 Plug 'bswinnerton/vim-test-github'
 ```
 
 Add the following after the test definition from above:
 
-```vimscript
+```viml
 let test#runners = {'Ruby': ['GitHub']}
 ```
 
@@ -31,13 +31,13 @@ strategies](https://github.com/janko-m/vim-test#strategies) to asynchronously
 run tests from Vim. I like [vimux](https://github.com/benmills/vimux), to use it
 you can set the following in your `~/.vimrc`:
 
-```vimscript
+```viml
 let test#strategy = "vimux"
 ```
 
 I'd also recommend making it easy to run vim-test from a key sequence:
 
-```vimscript
+```viml
 nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
