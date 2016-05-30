@@ -7,7 +7,7 @@ This is a Vim plugin that adds a test runner to
 This allows your cursor to be inside of a test definition, and it will figure
 out the appropriate line number to run.
 
-![screencap](https://cloud.githubusercontent.com/assets/934497/12875253/0009a10a-cdb4-11e5-9182-6bf586bc344c.gif)
+![screencap](https://cloud.githubusercontent.com/assets/934497/15637842/49047822-25e7-11e6-9347-1c798f89918d.gif)
 
 ### Installing
 
